@@ -6,7 +6,7 @@ on:
     branches: [main, master]
 jobs:
   test:
-    runs-on: ebf-pod-ubuntu-2004-slim@${{ github.run_id }}-playright-sand-s
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
